@@ -40,7 +40,7 @@ function sortArr(Array) {
     var temp=Number;
     for (var i = 0; i < Array.length ; i++) {
         for (var j = Array.length - 1; j > i; j--) {
-            if (Array[j] < Array[j-1]){
+            if (Array[j] > Array[j-1]){
                 temp = Array[j];
                 Array[j] = Array[j-1];
                 Array[j-1] = temp;
